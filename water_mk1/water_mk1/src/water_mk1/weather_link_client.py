@@ -15,8 +15,8 @@ class WeatherLinkClient:
         self.api_key = os.getenv("WEATHERLINK_API_KEY")
         self.api_key_secret = os.getenv("WEATHERLINK_API_SECRET")
 
-        print(f"API_KEY loaded: {bool(self.api_key)}")
-        print(f"API_SECRET loaded: {bool(self.api_key_secret)}")
+        # print(f"API_KEY loaded: {bool(self.api_key)}")
+        # print(f"API_SECRET loaded: {bool(self.api_key_secret)}")
 
         if not self.api_key or not self.api_key_secret:
             raise ValueError("API key and secret must be set in environment variables")
