@@ -2,6 +2,7 @@ import requests
 from datetime import datetime
 from dotenv import load_dotenv
 from pathlib import Path
+import pandas as pd
 import csv
 import os
 
@@ -43,6 +44,23 @@ class WeatherLinkClient:
     
     def to_csv(self, data: dict, filename: str = "output.csv") -> str:
 
+        KEEP_COLUMNS = {
+            "ts",
+            "temp_out", "temp_out_hi", "temp_out_lo",
+            "hum_out", "dew_point_out", "wet_bulb",
+            "wind_speed_avg", "wind_speed_hi", "wind_dir_of_hi",
+            "wind_dir_of_prevail", "wind_run", "wind_chill",
+            "solar_rad_avg", "solar_rad_hi", "solar_energy",
+            "uv_index_avg", "uv_index_hi", "uv_dose",
+            "bar", "bar_alt", "abs_press", "bar_trend_3_hr", "pressure_last",
+            "rainfall_in", "rainfall_mm", "rain_rate_hi_in", "rain_rate_hi_mm",
+            "et", "heat_index_out", "thw_index", "thsw_index",
+            "deg_days_heat", "deg_days_cool", "air_density", "emc",
+            "night_cloud_cover",
+            "moist_soil_last_1", "temp_last_1", "salinity_last_1",
+            "water_potential_last", "direct_reading_last", "temp_resistance_last",
+        }
+
         station_id = data.get("station_id", "")
         generated_at = data.get("generated_at", "")
         sensors  = data.get("sensors", [])
@@ -51,38 +69,44 @@ class WeatherLinkClient:
         output_dir.mkdir(exist_ok=True)
         output_path = output_dir / filename
 
-        rows = []
+        frames = []
         for sensor in sensors:
             lsid = sensor.get("lsid", "")
             sensor_type = sensor.get("sensor_type", "")
-            for record in sensor.get("data", []):
-                row = {
-                    "station_id": station_id,
-                    "generated_at": datetime.fromtimestamp(generated_at).isoformat(),
-                    "lsid": lsid,
-                    "sensor_type": sensor_type,
-                } 
+            records = sensor.get("data", [])
 
-                if "ts" in record and record["ts"]:
-                    row["ts"] = datetime.fromtimestamp(record["ts"]).isoformat()
-                else:
-                    row["ts"] = ""
+            if not records:
+                print(f"Warning: No data for sensor {lsid} ({sensor_type})")
+                continue
 
-                for key, value in record.items():
-                     if key != "ts":
-                        row[key] = value
+            df = pd.DataFrame(records)
+            if "ts" not in df.columns:
+                print(f"Warning: No timestamp column for sensor {lsid} ({sensor_type})")
+                continue
 
-                rows.append(row)
+            df["ts"] = pd.to_datetime(df["ts"], unit="s").dt.floor("h")
 
-        if not rows:
-            print("No data to write to CSV.")
+            cols_to_keep = [col for col in df.columns if col in KEEP_COLUMNS]
+            if len(cols_to_keep) <= 1:
+                continue
+            df = df[cols_to_keep]
+
+            numeric_cols = df.select_dtypes(include="number").columns
+            df = df.groupby("ts")[numeric_cols].mean().reset_index()
+
+            rename = {col: f"{col}__{lsid}" for col in df.columns if col != "ts"}
+            df = df.rename(columns=rename)
+            frames.append(df)
+
+        if not frames:
+            print("No valid sensor data to write.")
             return ""
         
-        all_keys = list(dict.fromkeys(k for row in rows for k in row))
-        with open(output_path, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=all_keys, extrasaction="ignore")
-            writer.writeheader()
-            writer.writerows(rows)
+        result = frames[0]
+        for frame in frames[1:]:
+            result = pd.merge(result, frame, on="ts", how="outer")
 
-        print(f"CSV file created at: {output_path}")
-        return output_path
+        result = result.sort_values("ts").reset_index(drop=True)
+        result.to_csv(output_path, index=False)
+        print(f"Data written to {output_path}")
+        return str(output_path)

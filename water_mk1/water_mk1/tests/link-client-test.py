@@ -5,7 +5,7 @@ from tqdm import tqdm
 client = WeatherLinkClient()
 
 end_time   = datetime.now()
-start_time = end_time - timedelta(days=365 * 2)
+start_time = end_time - timedelta(days=31)
 
 total_days = (end_time - start_time).days
 
@@ -40,4 +40,4 @@ with tqdm(total=total_days, unit="day", desc="Downloading", ncols=80) as pbar:
         current = next_step
         pbar.update(1)
 
-client.to_csv(all_data, "two_years_history.csv")
+client.to_csv(all_data, "one_month_history.csv")
