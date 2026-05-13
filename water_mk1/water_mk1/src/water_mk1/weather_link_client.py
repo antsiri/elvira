@@ -76,7 +76,7 @@ class WeatherLinkClient:
             records = sensor.get("data", [])
 
             if not records:
-                print(f"Warning: No data for sensor {lsid} ({sensor_type})")
+                print(f"Warning: No data records for sensor {lsid} ({sensor_type})")
                 continue
 
             df = pd.DataFrame(records)
@@ -90,23 +90,17 @@ class WeatherLinkClient:
             if len(cols_to_keep) <= 1:
                 continue
             df = df[cols_to_keep]
-
-            numeric_cols = df.select_dtypes(include="number").columns
-            df = df.groupby("ts")[numeric_cols].mean().reset_index()
-
-            rename = {col: f"{col}__{lsid}" for col in df.columns if col != "ts"}
-            df = df.rename(columns=rename)
             frames.append(df)
 
         if not frames:
             print("No valid sensor data to write.")
             return ""
         
-        result = frames[0]
-        for frame in frames[1:]:
-            result = pd.merge(result, frame, on="ts", how="outer")
-
+        combined = pd.concat(frames, ignore_index=True)
+        numeric_cols = combined.select_dtypes(include=["number"]).columns
+        result = combined.groupby("ts")[numeric_cols].mean().reset_index()
         result = result.sort_values("ts").reset_index(drop=True)
+        result.insert(0, "station_id", station_id)
         result.to_csv(output_path, index=False)
         print(f"Data written to {output_path}")
         return str(output_path)
