@@ -39,8 +39,15 @@ class WeatherLinkClient:
     def get_current_conditions(self, station_id: int | str) -> dict:
         return self._get(f"current/{station_id}")
     
-    def get_historical_data(self, station_id: int | str, start_time: datetime, end_time: datetime) -> dict:
-        return self._get(f"historic/{station_id}", {"start-timestamp": int(start_time.timestamp()), "end-timestamp": int(end_time.timestamp())})
+    def get_historical_data(self, station_id: int | str, start_time: datetime, end_time: datetime, lsid_filter: list = None) -> dict:
+        data =  self._get(f"historic/{station_id}", {"start-timestamp": int(start_time.timestamp()), "end-timestamp": int(end_time.timestamp())})
+
+        if lsid_filter:
+            data["sensors"] = [
+                s for s in data.get("sensors", []) if s.get("lsid") in lsid_filter
+            ]
+
+        return data
     
     def to_csv(self, data: dict, filename: str = "output.csv") -> str:
 
