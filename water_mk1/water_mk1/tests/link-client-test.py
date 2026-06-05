@@ -7,11 +7,7 @@ FLORAPULSE_EXCLUDE = [864286, 864288, 955142, 955136, 864298]
 client = WeatherLinkClient()
 
 end_time   = datetime.now()
-<<<<<<< HEAD
-start_time = end_time - timedelta(days=365)
-=======
-start_time = end_time - timedelta(days=365*2)
->>>>>>> 10b12db (csv generation with considering each type data as mean of all sensors data of that type 2)
+start_time = end_time - timedelta(days=2*365)
 
 total_days = (end_time - start_time).days
 
@@ -52,9 +48,4 @@ with tqdm(total=total_days, unit="day", desc="Downloading", ncols=80) as pbar:
         current = next_step
         pbar.update(1)
 
-<<<<<<< HEAD
-client.to_csv(all_data, "one_year_history.csv")
-=======
 client.to_csv(all_data, "two_years_history.csv")
-
->>>>>>> 10b12db (csv generation with considering each type data as mean of all sensors data of that type 2)
