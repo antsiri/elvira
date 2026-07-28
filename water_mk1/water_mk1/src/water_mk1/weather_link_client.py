@@ -66,6 +66,7 @@ class WeatherLinkClient:
             "night_cloud_cover",
             "moist_soil_last_1", "temp_last_1", "salinity_last_1",
             "water_potential_last", "direct_reading_last", "temp_resistance_last",
+            "irrigated"
         }
 
         station_id = data.get("station_id", "")
@@ -102,11 +103,31 @@ class WeatherLinkClient:
         if not frames:
             print("No valid sensor data to write.")
             return ""
-        
+
         combined = pd.concat(frames, ignore_index=True)
-        numeric_cols = combined.select_dtypes(include=["number"]).columns
-        result = combined.groupby("ts")[numeric_cols].mean().reset_index()
-        result = result.sort_values("ts").reset_index(drop=True)
+        combined["irrigated"] = pd.to_numeric(combined["irrigated"], errors="coerce")
+
+        numeric_cols = combined.select_dtypes(include="number").columns.tolist()
+        numeric_cols_no_irr = [c for c in numeric_cols if c != "irrigated"]
+
+        soil_df  = combined[combined["irrigated"].notna()].copy()
+        meteo_df = combined[combined["irrigated"].isna()].copy()
+
+        # File 1: meteo aggregato per ts
+        meteo_only_cols = [c for c in numeric_cols_no_irr if meteo_df[c].notna().any()]
+        meteo_agg = meteo_df.groupby("ts")[meteo_only_cols].mean().reset_index()
+
+        # File 2: suolo aggregato per (ts, irrigated)
+        soil_agg = soil_df.groupby(["ts", "irrigated"])[numeric_cols_no_irr].mean().reset_index()
+
+        # Combina: merge su ts
+        meteo_agg["ts"] = meteo_agg["ts"].astype(str)
+        soil_agg["ts"]  = soil_agg["ts"].astype(str)
+
+        result = pd.merge(soil_agg, meteo_agg, on="ts", how="left", suffixes=("_soil", ""))
+        result = result[[c for c in result.columns if not c.endswith("_soil")]]
+
+        result = result.sort_values(["ts", "irrigated"]).reset_index(drop=True)
         result.insert(0, "station_id", station_id)
         result.to_csv(output_path, index=False)
         print(f"Data written to {output_path}")
