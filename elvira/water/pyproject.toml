@@ -24,7 +24,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "water_mk1", from = "src"}]
+packages = [{include = "water", from = "src"}]
 
 [[tool.poetry.source]]
 name = "torch-nightly"
