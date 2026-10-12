@@ -1,4 +1,4 @@
-from water_mk1.weather_link_client import WeatherLinkClient
+from water.src.water.Ingestion.weather_link_client import WeatherLinkClient
 from datetime import datetime, timedelta
 from tqdm import tqdm
 
