@@ -1,12 +1,13 @@
+
 [project]
 name = "water"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "antsiri",email = "antoniosirignano@outlook.it"}
+    {name = "antsiri", email = "antoniosirignano@outlook.it"}
 ]
 readme = "README.md"
-requires-python = ">=3.11, <3.13"
+requires-python = ">=3.11,<3.13"
 dependencies = [
     "requests (>=2.33.1,<3.0.0)",
     "datetime (>=6.0,<7.0)",
@@ -24,19 +25,4 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "water", from = "src"}]
-
-[[tool.poetry.source]]
-name = "torch-nightly"
-url = "https://download.pytorch.org/whl/nightly/cpu"
-priority = "explicit"
-
-
-[[tool.poetry.source]]
-name = "torch-stable"
-url = "https://download.pytorch.org/whl/cpu"
-priority = "explicit"
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+packages = [{ include = "water", from = "src" }]
