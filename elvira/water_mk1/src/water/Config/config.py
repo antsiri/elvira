@@ -25,7 +25,7 @@ class Config:
     # --- TARGET ---
     target: str = 'water_potential_last'
     zone_col: str = 'irrigted'                                              #0 = not irrigated, 1 = irrigated
-    date_cols: str = 'giorno'
+    date_col: str = 'giorno'
     horizon_days: int = 1                                                   #prediction of wp(t + horizon) with day t features
 
     # --- LEAKAGE ---
