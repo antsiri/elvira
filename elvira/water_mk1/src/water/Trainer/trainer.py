@@ -5,14 +5,33 @@
  * copyright 2026
 """
 
+from __future__ import annotations
+
+import joblib
 import pandas as pd
+import numpy as np
 
 from tqdm import tqdm
 from pathlib import Path
+from dataclasses import dataclass
+from itertools import product
+
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 from water.Config.config import Config
 from water.Models.models import BaseModel
 from water.Validation.validation import WalkForwardValidator
+
+WP_COL = 'wp_t'
+Y_COL = 'y'
+@dataclass(frozen=True)
+class Variant:
+    use_wp_t: bool
+    delta: bool
+
+    @property
+    def label(self) -> str:
+        return f'{'delta' if self.delta else 'level'} | {'with' if self.use_wp_t else 'without'} wp_t'
 
 class Evaluator:
     @staticmethod
