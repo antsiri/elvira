@@ -10,7 +10,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parents[3]
 
 @dataclass(frozen=True)
 class Config:
@@ -19,8 +19,14 @@ class Config:
     data_dir: Path = BASE_DIR / 'data'
     daily_filename: str = 'vigneto_daily_finale.csv'
     hourly_filename: str = 'vigneto_clean_hourly.csv'
-    solem_filename: str = 'solem_daily.csv'
     models_dir: Path = BASE_DIR / 'models'
+
+    # --- SOLEM ---
+    solem_filename: str = 'solem_daily.csv'
+    solem_export_dir: Path = BASE_DIR / 'data' /'solem_exports'
+    solem_export_glob: str = '*Valve*export*.csv'
+    solem_floow_threshold_lhp: float = 100.0
+    solem_session_gap_h: float = 3.0
 
     # --- TARGET ---
     target: str = 'water_potential_last'

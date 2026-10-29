@@ -60,7 +60,7 @@ class Trainer:
         self.models = [m for m in models if not isinstance(m, PersistanceBaseline)]
         self.baseline = PersistanceBaseline()
         self.results_: pd.DataFrame | None = None
-        self.predictions_ = pd.DataFrame | None = None
+        self.predictions_: pd.DataFrame | None = None
 
 #   HELPER -----------------------------------------------------------------------------------------
 

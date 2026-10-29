@@ -69,7 +69,7 @@ class PersistanceBaseline(BaseModel):
 class SklearnModel(BaseModel):
 
     @abstractmethod
-    def _build_estrimator(self): ...
+    def _build_estimator(self): ...
 
     def fit(self, X: pd.DataFrame, y: pd.Series) -> 'SklearnModel':
         if not isinstance(X, pd.DataFrame):
@@ -90,7 +90,7 @@ class RidgeModel(SklearnModel):
     base_name = 'ridge'
     DEFAULTS = {'alpha': 1.0}
 
-    def _build_estrimator(self):
+    def _build_estimator(self):
         return make_pipeline(StandardScaler(), Ridge(alpha=self.params['alpha']))
     
     def feature_weights(self) -> pd.Series | None:
@@ -99,14 +99,14 @@ class RidgeModel(SklearnModel):
         coef = self.estimator_[-1].coef_
         return pd.Series(coef, index=self.feature_names_).sort_values(key=np.abs, ascending=False)
 
-class RandomForestModel(BaseModel):
+class RandomForestModel(SklearnModel):
     base_name = 'random_forest'
     DEFAULTS = {
         'n_estimatots': 300, 'max_depth': 4, 'min_samples_leaf': 5,
         'max_features': 0.5, 'random_state': 42, 'n_jobs': -1
     }
 
-    def build_estimator(self):
+    def _build_estimator(self):
         return RandomForestRegressor(**self.params)
 
     def feature_weights(self) -> pd.Series | None:
@@ -115,14 +115,14 @@ class RandomForestModel(BaseModel):
         return pd.Series(self.estimator_.feature_importance_, index=self.feature_names_).sort_values(ascending=False)
     
 
-class GradientBoostingModel(BaseModel):
+class GradientBoostingModel(SklearnModel):
     base_name = 'gradient_boosting'
     DEFAULTS = {
         'n_estimatots': 200, 'learning_rate': 0.05, 'max_depth': 2,
         'subsamples': 0.8, 'min_samples_leaf': 5, 'random_state': 42
         }
 
-    def _build_estiamtor(self):
+    def _build_estimator(self):
         return GradientBoostingRegressor(**self.params)
 
     def feature_weights(self) -> pd.Series | None:

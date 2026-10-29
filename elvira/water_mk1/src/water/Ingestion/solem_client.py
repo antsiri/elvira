@@ -193,12 +193,12 @@ class SolemClient:
             raise SolemConnectionError(f'{method} {path} did not return JSON') from err
 
     def get_module_ids(self) -> list[str]:
-        data = self._json('POST', f'/user/{self.user_id}/modules')
+        data = self._json('POST', f'/users/{self.user_id}/modules')
         modules = data.get('modules', []) if isinstance(data, dict) else []
         return [m['id'] for m in modules if isinstance(m, dict) and m.get('id')]
 
     def get_module_page(self, module_id: str) -> tuple[dict[str, Any], list[dict[str, Any]]]:
-        html = self._request('GET', f'/module/{self.user_id}').text
+        html = self._request('GET', f'/module/{module_id}').text
         module = _extract_js_literal(html, _MODULE_MARKER, '{')
         labels = _extract_input_labels(html)
         raw_inputs = _extract_js_literal(html, _INPUTS_MARKER, '[') or []
@@ -215,9 +215,9 @@ class SolemClient:
         return tick if isinstance(tick, dict) else {}
 
     def get_sensor_data(self, module_id: str, start: datetime, end: datetime) -> Any:
-        return self._json('GET', '/remote/module/getComputedSensorData', params={'moduleId': module_id,
-                                                                                 'startData': _js_iso(start),
-                                                                                 'endData': _js_iso(end),
+        return self._json('GET', '/remote/module/getComputedSensorsData', params={'moduleId': module_id,
+                                                                                 'startDate': _js_iso(start),
+                                                                                 'endDate': _js_iso(end),
                                                                                  'forcedRawOrComputed': 'computed',
                                                                                  })
 
