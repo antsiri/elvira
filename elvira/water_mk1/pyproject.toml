@@ -1,13 +1,10 @@
-
 [project]
 name = "water"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "antsiri", email = "antoniosirignano@outlook.it"}
-]
-readme = "README.md"
+authors = [{ name = "antsiri", email = "antoniosirignano@outlook.it" }]
 requires-python = ">=3.11,<3.13"
+readme = "README.md"
 dependencies = [
     "requests (>=2.33.1,<3.0.0)",
     "datetime (>=6.0,<7.0)",
@@ -21,8 +18,9 @@ dependencies = [
     "scikit-learn (>=1.8.0,<2.0.0)",
     "ipykernel (>=7.2.0,<8.0.0)",
     "torch (==2.2.2)",
-    "pytorch-forecasting (>=1.7.0,<2.0.0)"
+    "pytorch-forecasting (>=1.7.0,<2.0.0)",
 ]
 
-[tool.poetry]
-packages = [{ include = "water", from = "src" }]
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
