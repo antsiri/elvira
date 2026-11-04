@@ -170,6 +170,9 @@ def run_solem_probe(cfg: Config, args: argparse.Namespace) -> None:
 
         say('It is necessary a parser. We need to run for the first time so see a json structure')
 
+def run_solem_sync(cfg: Config, args: argparse.Namespace) -> None:
+    raise NotImplementedError
+
 def run_recommend(cfg: Config, args: argparse.Namespace) -> None:
     if not cfg.has_irrigation_range:
         raise SystemExit('--wp-low and --wp-high are necessarry')
@@ -237,11 +240,20 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument('--model-path', help=f'file .joblib (default: "models/zonaN.joblib)')
     p.set_defaults(func=run_recommend)
 
-    p = sub.add_parser('solem-probe', parents=[common], help='Save the real answer form API mySOLEM')
+    p = sub.add_parser('solem-probe', parents=[common], help='Save the real answer from API mySOLEM')
     p.add_argument('--module-id', help='Module id')
     p.add_argument('--days', type=int, default=2, help='lecture days to download (default 2)')
     p.add_argument('--start', help='Initial data for inegstion from mySolem')
     p.add_argument('--end', help='End data for inegstion from mySolem')
+    p.set_defaults(func=run_solem_probe)
+
+    p = sub.add_parser('solem-sync', parents=[common], help='Daily liters from API mySOLEM')
+    p.add_argument('--module-id', help='Module id')
+    p.add_argument('--days', type=int, default=2, help='Default 7')
+    p.add_argument('--start', help='AAAA-MM-GG (UTC)')
+    p.add_argument('--end', help='AAAA-MM-GG (UTC), excluded: if missing, hi value is now')
+    p.add_argument('--chunk-days', type=float, default=7, help='Day per request (default 7)')
+    p.add_argument('--min-session-liters', type=float, default=0.0, help='discard session under those liters')
     p.set_defaults(func=run_solem_probe)
 
     return parser

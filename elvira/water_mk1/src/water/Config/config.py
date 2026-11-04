@@ -25,7 +25,7 @@ class Config:
     solem_filename: str = 'solem_daily.csv'
     solem_export_dir: Path = BASE_DIR / 'data' /'solem_exports'
     solem_export_glob: str = '*Valve*export*.csv'
-    solem_floow_threshold_lhp: float = 100.0
+    solem_flow_threshold_lhp: float = 100.0
     solem_session_gap_h: float = 3.0
 
     # --- TARGET ---
@@ -70,6 +70,8 @@ class Config:
             raise ValueError('wp_low and wp_high must be setted together')
         if self.wp_low is not None and self.wp_low >= self.wp_high:
             raise ValueError('wp_low must be < wp_high')
+        if self.solem_flow_threshold_lhp <= 0 or self.solem_session_gap_h <= 0:
+            raise ValueError('solem_flow_threshold_lhp and solem_session_gap_h must be > 0')
 
     @property
     def daily_path(self) -> Path:
@@ -86,3 +88,8 @@ class Config:
     @property
     def has_irrigation_range(self) -> bool:
         return self.wp_low is not None
+
+    @property
+    def solem_path(self) -> Path:
+        return self.data_dir / self.solem_filename
+    

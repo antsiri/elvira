@@ -1,0 +1,3295 @@
+[
+  {
+    "expression": "x",
+    "metadata": {
+      "equipmentType": "undefined",
+      "level": 0,
+      "probeId": 0,
+      "connectorType": "undefined"
+    },
+    "lowThreshold": null,
+    "highThresholdRawValue": null,
+    "expressionInverse": "x",
+    "settings": [
+      {
+        "lowDebitThreshold": 2147483647,
+        "lowDebitThresholdAction": 0,
+        "nominalDebit": 2147483647,
+        "settlingTimeOn": 0,
+        "settlingTimeOff": 0,
+        "leakAlertVolume": 4000,
+        "highDebitThreshold": 2147483647,
+        "highDebitThresholdAction": 0,
+        "alert": true
+      }
+    ],
+    "name": "",
+    "subType": 0,
+    "type": 1,
+    "index": 1,
+    "interval": 1,
+    "unit": 1,
+    "lowThresholdRawValue": null,
+    "highThreshold": null,
+    "module": "649400e5cdf07de98960c8d4",
+    "pushAlert": true,
+    "mailAlert": true,
+    "isLastMeasureBeyondThresholds": false,
+    "hasFaultyProbe": false,
+    "doNotSendActionToPermanentOff": false,
+    "createdAt": "2023-06-22T08:05:57.075Z",
+    "updatedAt": "2026-11-03T02:02:50.145Z",
+    "realyUpdated": false,
+    "sentAt": "2026-08-22T07:47:32.036Z",
+    "lastHighThresholdAlertSent": null,
+    "lastLowThresholdAlertSent": null,
+    "realyUpdatedAt": "2025-07-03T07:10:13.160Z",
+    "actionThreshold": {
+      "program": {
+        "thresholdExceeded": {
+          "action": 0,
+          "waterBudget": 0
+        },
+        "betweenThresholds": {
+          "action": 0,
+          "waterBudget": 0
+        },
+        "thresholdNotReached": {
+          "action": 0,
+          "waterBudget": 0
+        }
+      }
+    },
+    "actions": [
+      {
+        "type": 0,
+        "outputs": 0,
+        "schedule": 0,
+        "on": 0,
+        "off": 0,
+        "duration": 0
+      }
+    ],
+    "channel": null,
+    "id": "649400e5cdf07de98960c8d6",
+    "computedSensorData": [
+      {
+        "tickTimestamp": "2026-05-07T07:45:00.000Z",
+        "value": 1293424,
+        "flag": "lastTickBeforeStartDate",
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-12T03:22:14.000Z",
+        "value": 1293424,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-23T08:35:00.000Z",
+        "value": 1293462,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-23T08:36:00.000Z",
+        "value": 1293482,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-23T08:37:00.000Z",
+        "value": 1293497,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-23T08:38:00.000Z",
+        "value": 1293501,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T08:28:00.000Z",
+        "value": 1293503,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T08:29:00.000Z",
+        "value": 1293504,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T10:25:00.000Z",
+        "value": 1293506,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T11:41:00.000Z",
+        "value": 1293508,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T11:42:00.000Z",
+        "value": 1293512,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T11:50:00.000Z",
+        "value": 1293514,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T11:51:00.000Z",
+        "value": 1293516,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T12:01:00.000Z",
+        "value": 1293518,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T12:02:00.000Z",
+        "value": 1293520,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T12:57:00.000Z",
+        "value": 1293521,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T12:58:00.000Z",
+        "value": 1293522,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T13:02:00.000Z",
+        "value": 1293524,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T13:59:00.000Z",
+        "value": 1293525,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T14:00:00.000Z",
+        "value": 1293528,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T15:12:00.000Z",
+        "value": 1293529,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T16:07:00.000Z",
+        "value": 1293530,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T16:57:00.000Z",
+        "value": 1293531,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T20:52:00.000Z",
+        "value": 1293532,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T21:41:00.000Z",
+        "value": 1293533,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-27T23:02:00.000Z",
+        "value": 1293534,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T00:06:00.000Z",
+        "value": 1293535,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T00:08:00.000Z",
+        "value": 1293537,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T00:09:00.000Z",
+        "value": 1293538,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T12:07:00.000Z",
+        "value": 1293539,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T12:42:00.000Z",
+        "value": 1293540,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T12:47:00.000Z",
+        "value": 1293541,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T16:10:00.000Z",
+        "value": 1293542,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T16:25:00.000Z",
+        "value": 1293543,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T16:52:00.000Z",
+        "value": 1293544,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:11:00.000Z",
+        "value": 1293569,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:12:00.000Z",
+        "value": 1293600,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:13:00.000Z",
+        "value": 1293628,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:14:00.000Z",
+        "value": 1293655,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:15:00.000Z",
+        "value": 1293683,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:16:00.000Z",
+        "value": 1293711,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:17:00.000Z",
+        "value": 1293738,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:18:00.000Z",
+        "value": 1293766,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:19:00.000Z",
+        "value": 1293793,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:20:00.000Z",
+        "value": 1293820,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:21:00.000Z",
+        "value": 1293848,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:22:00.000Z",
+        "value": 1293875,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:23:00.000Z",
+        "value": 1293902,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:24:00.000Z",
+        "value": 1293929,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:25:00.000Z",
+        "value": 1293956,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:26:00.000Z",
+        "value": 1293984,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:27:00.000Z",
+        "value": 1294011,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:28:00.000Z",
+        "value": 1294038,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:29:00.000Z",
+        "value": 1294065,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:30:00.000Z",
+        "value": 1294092,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:31:00.000Z",
+        "value": 1294119,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:32:00.000Z",
+        "value": 1294146,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:33:00.000Z",
+        "value": 1294174,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:34:00.000Z",
+        "value": 1294201,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:35:00.000Z",
+        "value": 1294228,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:36:00.000Z",
+        "value": 1294255,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:37:00.000Z",
+        "value": 1294282,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:38:00.000Z",
+        "value": 1294309,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:39:00.000Z",
+        "value": 1294336,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:40:00.000Z",
+        "value": 1294363,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:41:00.000Z",
+        "value": 1294390,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:42:00.000Z",
+        "value": 1294417,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:43:00.000Z",
+        "value": 1294444,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:44:00.000Z",
+        "value": 1294471,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:45:00.000Z",
+        "value": 1294498,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:46:00.000Z",
+        "value": 1294525,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:47:00.000Z",
+        "value": 1294552,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:48:00.000Z",
+        "value": 1294579,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:49:00.000Z",
+        "value": 1294606,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:50:00.000Z",
+        "value": 1294633,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:51:00.000Z",
+        "value": 1294660,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:52:00.000Z",
+        "value": 1294687,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:53:00.000Z",
+        "value": 1294714,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:54:00.000Z",
+        "value": 1294740,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:55:00.000Z",
+        "value": 1294767,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:56:00.000Z",
+        "value": 1294794,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:57:00.000Z",
+        "value": 1294821,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:58:00.000Z",
+        "value": 1294848,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-28T23:59:00.000Z",
+        "value": 1294874,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:00:00.000Z",
+        "value": 1294901,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:01:00.000Z",
+        "value": 1294928,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:02:00.000Z",
+        "value": 1294955,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:03:00.000Z",
+        "value": 1294981,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:04:00.000Z",
+        "value": 1295008,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:05:00.000Z",
+        "value": 1295035,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:06:00.000Z",
+        "value": 1295062,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:07:00.000Z",
+        "value": 1295089,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:08:00.000Z",
+        "value": 1295116,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:09:00.000Z",
+        "value": 1295142,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:10:00.000Z",
+        "value": 1295169,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:11:00.000Z",
+        "value": 1295196,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:12:00.000Z",
+        "value": 1295222,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:13:00.000Z",
+        "value": 1295249,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:14:00.000Z",
+        "value": 1295275,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:15:00.000Z",
+        "value": 1295302,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:16:00.000Z",
+        "value": 1295329,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:17:00.000Z",
+        "value": 1295356,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:18:00.000Z",
+        "value": 1295382,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:19:00.000Z",
+        "value": 1295409,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:20:00.000Z",
+        "value": 1295436,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:21:00.000Z",
+        "value": 1295462,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:22:00.000Z",
+        "value": 1295489,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:23:00.000Z",
+        "value": 1295516,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:24:00.000Z",
+        "value": 1295542,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:25:00.000Z",
+        "value": 1295569,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:26:00.000Z",
+        "value": 1295596,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:27:00.000Z",
+        "value": 1295622,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:28:00.000Z",
+        "value": 1295649,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:29:00.000Z",
+        "value": 1295675,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:30:00.000Z",
+        "value": 1295701,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:31:00.000Z",
+        "value": 1295728,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:32:00.000Z",
+        "value": 1295754,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:33:00.000Z",
+        "value": 1295781,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:34:00.000Z",
+        "value": 1295807,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:35:00.000Z",
+        "value": 1295834,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:36:00.000Z",
+        "value": 1295860,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:37:00.000Z",
+        "value": 1295887,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:38:00.000Z",
+        "value": 1295914,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:39:00.000Z",
+        "value": 1295940,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:40:00.000Z",
+        "value": 1295967,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:41:00.000Z",
+        "value": 1295993,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:42:00.000Z",
+        "value": 1296020,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:43:00.000Z",
+        "value": 1296047,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:44:00.000Z",
+        "value": 1296073,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:45:00.000Z",
+        "value": 1296100,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:46:00.000Z",
+        "value": 1296127,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:47:00.000Z",
+        "value": 1296153,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:48:00.000Z",
+        "value": 1296180,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:49:00.000Z",
+        "value": 1296206,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:50:00.000Z",
+        "value": 1296233,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:51:00.000Z",
+        "value": 1296259,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:52:00.000Z",
+        "value": 1296286,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:53:00.000Z",
+        "value": 1296313,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:54:00.000Z",
+        "value": 1296339,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:55:00.000Z",
+        "value": 1296366,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:56:00.000Z",
+        "value": 1296392,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:57:00.000Z",
+        "value": 1296419,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:58:00.000Z",
+        "value": 1296445,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T00:59:00.000Z",
+        "value": 1296472,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:00:00.000Z",
+        "value": 1296499,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:01:00.000Z",
+        "value": 1296525,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:02:00.000Z",
+        "value": 1296552,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:03:00.000Z",
+        "value": 1296578,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:04:00.000Z",
+        "value": 1296604,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:05:00.000Z",
+        "value": 1296631,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:06:00.000Z",
+        "value": 1296657,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:07:00.000Z",
+        "value": 1296684,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:08:00.000Z",
+        "value": 1296710,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:09:00.000Z",
+        "value": 1296737,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:10:00.000Z",
+        "value": 1296763,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:11:00.000Z",
+        "value": 1296790,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:12:00.000Z",
+        "value": 1296816,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:13:00.000Z",
+        "value": 1296842,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:14:00.000Z",
+        "value": 1296869,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:15:00.000Z",
+        "value": 1296895,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:16:00.000Z",
+        "value": 1296922,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:17:00.000Z",
+        "value": 1296948,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:18:00.000Z",
+        "value": 1296975,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:19:00.000Z",
+        "value": 1297001,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:20:00.000Z",
+        "value": 1297028,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:21:00.000Z",
+        "value": 1297054,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:22:00.000Z",
+        "value": 1297081,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:23:00.000Z",
+        "value": 1297107,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:24:00.000Z",
+        "value": 1297134,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:25:00.000Z",
+        "value": 1297160,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:26:00.000Z",
+        "value": 1297187,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:27:00.000Z",
+        "value": 1297213,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:28:00.000Z",
+        "value": 1297239,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:29:00.000Z",
+        "value": 1297266,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:30:00.000Z",
+        "value": 1297292,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:31:00.000Z",
+        "value": 1297319,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:32:00.000Z",
+        "value": 1297345,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:33:00.000Z",
+        "value": 1297371,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:34:00.000Z",
+        "value": 1297398,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:35:00.000Z",
+        "value": 1297424,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:36:00.000Z",
+        "value": 1297451,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:37:00.000Z",
+        "value": 1297477,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:38:00.000Z",
+        "value": 1297503,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:39:00.000Z",
+        "value": 1297529,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:40:00.000Z",
+        "value": 1297555,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:41:00.000Z",
+        "value": 1297582,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:42:00.000Z",
+        "value": 1297608,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:43:00.000Z",
+        "value": 1297634,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:44:00.000Z",
+        "value": 1297660,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:45:00.000Z",
+        "value": 1297687,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:46:00.000Z",
+        "value": 1297713,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:47:00.000Z",
+        "value": 1297739,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:48:00.000Z",
+        "value": 1297765,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:49:00.000Z",
+        "value": 1297792,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:50:00.000Z",
+        "value": 1297818,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:51:00.000Z",
+        "value": 1297844,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:52:00.000Z",
+        "value": 1297871,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:53:00.000Z",
+        "value": 1297897,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:54:00.000Z",
+        "value": 1297923,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:55:00.000Z",
+        "value": 1297949,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:56:00.000Z",
+        "value": 1297976,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:57:00.000Z",
+        "value": 1298002,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:58:00.000Z",
+        "value": 1298028,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T01:59:00.000Z",
+        "value": 1298054,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:00:00.000Z",
+        "value": 1298081,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:01:00.000Z",
+        "value": 1298107,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:02:00.000Z",
+        "value": 1298133,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:03:00.000Z",
+        "value": 1298159,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:04:00.000Z",
+        "value": 1298185,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:05:00.000Z",
+        "value": 1298212,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:06:00.000Z",
+        "value": 1298238,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:07:00.000Z",
+        "value": 1298264,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:08:00.000Z",
+        "value": 1298290,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:09:00.000Z",
+        "value": 1298316,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:10:00.000Z",
+        "value": 1298342,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:11:00.000Z",
+        "value": 1298369,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:12:00.000Z",
+        "value": 1298395,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:13:00.000Z",
+        "value": 1298421,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:14:00.000Z",
+        "value": 1298447,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:15:00.000Z",
+        "value": 1298473,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:16:00.000Z",
+        "value": 1298499,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:17:00.000Z",
+        "value": 1298525,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:18:00.000Z",
+        "value": 1298551,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:19:00.000Z",
+        "value": 1298577,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:20:00.000Z",
+        "value": 1298603,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:21:00.000Z",
+        "value": 1298629,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:22:00.000Z",
+        "value": 1298655,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:23:00.000Z",
+        "value": 1298681,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:24:00.000Z",
+        "value": 1298707,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:25:00.000Z",
+        "value": 1298733,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:26:00.000Z",
+        "value": 1298760,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:27:00.000Z",
+        "value": 1298786,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:28:00.000Z",
+        "value": 1298812,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:29:00.000Z",
+        "value": 1298838,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:30:00.000Z",
+        "value": 1298864,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:31:00.000Z",
+        "value": 1298890,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:32:00.000Z",
+        "value": 1298916,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:33:00.000Z",
+        "value": 1298942,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:34:00.000Z",
+        "value": 1298968,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:35:00.000Z",
+        "value": 1298994,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:36:00.000Z",
+        "value": 1299020,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:37:00.000Z",
+        "value": 1299046,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:38:00.000Z",
+        "value": 1299072,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:39:00.000Z",
+        "value": 1299098,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:40:00.000Z",
+        "value": 1299124,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:41:00.000Z",
+        "value": 1299150,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:42:00.000Z",
+        "value": 1299176,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:43:00.000Z",
+        "value": 1299202,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:44:00.000Z",
+        "value": 1299228,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:45:00.000Z",
+        "value": 1299254,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:46:00.000Z",
+        "value": 1299280,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:47:00.000Z",
+        "value": 1299306,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:48:00.000Z",
+        "value": 1299331,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:49:00.000Z",
+        "value": 1299357,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:50:00.000Z",
+        "value": 1299383,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:51:00.000Z",
+        "value": 1299409,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:52:00.000Z",
+        "value": 1299435,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:53:00.000Z",
+        "value": 1299460,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:54:00.000Z",
+        "value": 1299486,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:55:00.000Z",
+        "value": 1299512,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:56:00.000Z",
+        "value": 1299538,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:57:00.000Z",
+        "value": 1299564,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:58:00.000Z",
+        "value": 1299590,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T02:59:00.000Z",
+        "value": 1299616,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:00:00.000Z",
+        "value": 1299642,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:01:00.000Z",
+        "value": 1299667,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:02:00.000Z",
+        "value": 1299693,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:03:00.000Z",
+        "value": 1299719,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:04:00.000Z",
+        "value": 1299745,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:05:00.000Z",
+        "value": 1299771,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:06:00.000Z",
+        "value": 1299797,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:07:00.000Z",
+        "value": 1299823,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:08:00.000Z",
+        "value": 1299848,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:09:00.000Z",
+        "value": 1299874,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:10:00.000Z",
+        "value": 1299900,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:11:00.000Z",
+        "value": 1299926,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:12:00.000Z",
+        "value": 1299952,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:13:00.000Z",
+        "value": 1299977,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:14:00.000Z",
+        "value": 1300003,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:15:00.000Z",
+        "value": 1300029,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:16:00.000Z",
+        "value": 1300055,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:17:00.000Z",
+        "value": 1300081,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:18:00.000Z",
+        "value": 1300107,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:19:00.000Z",
+        "value": 1300132,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:20:00.000Z",
+        "value": 1300158,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:21:00.000Z",
+        "value": 1300184,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:22:00.000Z",
+        "value": 1300210,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:23:00.000Z",
+        "value": 1300235,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:24:00.000Z",
+        "value": 1300261,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:25:00.000Z",
+        "value": 1300287,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:26:00.000Z",
+        "value": 1300312,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:27:00.000Z",
+        "value": 1300338,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:28:00.000Z",
+        "value": 1300364,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:29:00.000Z",
+        "value": 1300390,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:30:00.000Z",
+        "value": 1300415,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:31:00.000Z",
+        "value": 1300441,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:32:00.000Z",
+        "value": 1300467,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:33:00.000Z",
+        "value": 1300493,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:34:00.000Z",
+        "value": 1300519,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:35:00.000Z",
+        "value": 1300544,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:36:00.000Z",
+        "value": 1300570,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:37:00.000Z",
+        "value": 1300596,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:38:00.000Z",
+        "value": 1300622,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:39:00.000Z",
+        "value": 1300647,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:40:00.000Z",
+        "value": 1300673,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:41:00.000Z",
+        "value": 1300699,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:42:00.000Z",
+        "value": 1300724,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:43:00.000Z",
+        "value": 1300750,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:44:00.000Z",
+        "value": 1300776,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:45:00.000Z",
+        "value": 1300801,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:46:00.000Z",
+        "value": 1300827,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:47:00.000Z",
+        "value": 1300852,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:48:00.000Z",
+        "value": 1300878,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:49:00.000Z",
+        "value": 1300904,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:50:00.000Z",
+        "value": 1300929,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:51:00.000Z",
+        "value": 1300955,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:52:00.000Z",
+        "value": 1300980,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:53:00.000Z",
+        "value": 1301006,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:54:00.000Z",
+        "value": 1301031,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:55:00.000Z",
+        "value": 1301057,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:56:00.000Z",
+        "value": 1301082,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:57:00.000Z",
+        "value": 1301108,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:58:00.000Z",
+        "value": 1301133,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T03:59:00.000Z",
+        "value": 1301159,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:00:00.000Z",
+        "value": 1301184,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:01:00.000Z",
+        "value": 1301210,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:02:00.000Z",
+        "value": 1301235,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:03:00.000Z",
+        "value": 1301261,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:04:00.000Z",
+        "value": 1301286,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:05:00.000Z",
+        "value": 1301312,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:06:00.000Z",
+        "value": 1301337,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:07:00.000Z",
+        "value": 1301363,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:08:00.000Z",
+        "value": 1301389,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:09:00.000Z",
+        "value": 1301414,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:10:00.000Z",
+        "value": 1301440,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:11:00.000Z",
+        "value": 1301465,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:12:00.000Z",
+        "value": 1301491,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:13:00.000Z",
+        "value": 1301516,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:14:00.000Z",
+        "value": 1301542,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:15:00.000Z",
+        "value": 1301567,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:16:00.000Z",
+        "value": 1301593,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:17:00.000Z",
+        "value": 1301619,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:18:00.000Z",
+        "value": 1301644,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:19:00.000Z",
+        "value": 1301670,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:20:00.000Z",
+        "value": 1301695,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:21:00.000Z",
+        "value": 1301721,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:22:00.000Z",
+        "value": 1301746,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:23:00.000Z",
+        "value": 1301772,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:24:00.000Z",
+        "value": 1301797,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:25:00.000Z",
+        "value": 1301823,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:26:00.000Z",
+        "value": 1301848,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:27:00.000Z",
+        "value": 1301874,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:28:00.000Z",
+        "value": 1301899,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:29:00.000Z",
+        "value": 1301924,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:30:00.000Z",
+        "value": 1301950,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:31:00.000Z",
+        "value": 1301975,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:32:00.000Z",
+        "value": 1302000,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:33:00.000Z",
+        "value": 1302026,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:34:00.000Z",
+        "value": 1302051,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:35:00.000Z",
+        "value": 1302076,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:36:00.000Z",
+        "value": 1302102,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:37:00.000Z",
+        "value": 1302127,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:38:00.000Z",
+        "value": 1302152,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:39:00.000Z",
+        "value": 1302178,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:40:00.000Z",
+        "value": 1302203,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:41:00.000Z",
+        "value": 1302228,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:42:00.000Z",
+        "value": 1302254,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:43:00.000Z",
+        "value": 1302279,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:44:00.000Z",
+        "value": 1302304,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:45:00.000Z",
+        "value": 1302330,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:46:00.000Z",
+        "value": 1302355,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:47:00.000Z",
+        "value": 1302381,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:48:00.000Z",
+        "value": 1302406,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:49:00.000Z",
+        "value": 1302431,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:50:00.000Z",
+        "value": 1302456,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:51:00.000Z",
+        "value": 1302482,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:52:00.000Z",
+        "value": 1302507,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:53:00.000Z",
+        "value": 1302532,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:54:00.000Z",
+        "value": 1302558,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:55:00.000Z",
+        "value": 1302583,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:56:00.000Z",
+        "value": 1302608,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:57:00.000Z",
+        "value": 1302634,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:58:00.000Z",
+        "value": 1302659,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T04:59:00.000Z",
+        "value": 1302684,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:00:00.000Z",
+        "value": 1302709,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:01:00.000Z",
+        "value": 1302735,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:02:00.000Z",
+        "value": 1302760,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:03:00.000Z",
+        "value": 1302785,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:04:00.000Z",
+        "value": 1302810,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:05:00.000Z",
+        "value": 1302836,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:06:00.000Z",
+        "value": 1302861,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:07:00.000Z",
+        "value": 1302886,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:08:00.000Z",
+        "value": 1302911,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:09:00.000Z",
+        "value": 1302936,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:10:00.000Z",
+        "value": 1302962,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:11:00.000Z",
+        "value": 1302987,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:12:00.000Z",
+        "value": 1303012,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:13:00.000Z",
+        "value": 1303037,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:14:00.000Z",
+        "value": 1303063,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:15:00.000Z",
+        "value": 1303088,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:16:00.000Z",
+        "value": 1303113,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:17:00.000Z",
+        "value": 1303139,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:18:00.000Z",
+        "value": 1303164,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:19:00.000Z",
+        "value": 1303190,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:20:00.000Z",
+        "value": 1303215,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:21:00.000Z",
+        "value": 1303240,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:22:00.000Z",
+        "value": 1303266,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:23:00.000Z",
+        "value": 1303291,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:24:00.000Z",
+        "value": 1303316,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:25:00.000Z",
+        "value": 1303342,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:26:00.000Z",
+        "value": 1303367,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:27:00.000Z",
+        "value": 1303393,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:28:00.000Z",
+        "value": 1303418,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:29:00.000Z",
+        "value": 1303443,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:30:00.000Z",
+        "value": 1303468,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:31:00.000Z",
+        "value": 1303494,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:32:00.000Z",
+        "value": 1303519,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:33:00.000Z",
+        "value": 1303544,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:34:00.000Z",
+        "value": 1303569,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:35:00.000Z",
+        "value": 1303594,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:36:00.000Z",
+        "value": 1303619,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:37:00.000Z",
+        "value": 1303645,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:38:00.000Z",
+        "value": 1303670,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:39:00.000Z",
+        "value": 1303695,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:40:00.000Z",
+        "value": 1303720,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:41:00.000Z",
+        "value": 1303746,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:42:00.000Z",
+        "value": 1303771,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:43:00.000Z",
+        "value": 1303796,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:44:00.000Z",
+        "value": 1303821,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:45:00.000Z",
+        "value": 1303847,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:46:00.000Z",
+        "value": 1303872,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:47:00.000Z",
+        "value": 1303897,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:48:00.000Z",
+        "value": 1303923,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:49:00.000Z",
+        "value": 1303948,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:50:00.000Z",
+        "value": 1303973,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:51:00.000Z",
+        "value": 1303999,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:52:00.000Z",
+        "value": 1304024,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:53:00.000Z",
+        "value": 1304049,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:54:00.000Z",
+        "value": 1304075,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:55:00.000Z",
+        "value": 1304100,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:56:00.000Z",
+        "value": 1304125,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:57:00.000Z",
+        "value": 1304151,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:58:00.000Z",
+        "value": 1304176,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T05:59:00.000Z",
+        "value": 1304201,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:00:00.000Z",
+        "value": 1304227,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:01:00.000Z",
+        "value": 1304252,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:02:00.000Z",
+        "value": 1304277,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:03:00.000Z",
+        "value": 1304303,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:04:00.000Z",
+        "value": 1304328,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:05:00.000Z",
+        "value": 1304353,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:06:00.000Z",
+        "value": 1304378,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:07:00.000Z",
+        "value": 1304404,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:08:00.000Z",
+        "value": 1304429,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:09:00.000Z",
+        "value": 1304454,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:10:00.000Z",
+        "value": 1304479,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:11:00.000Z",
+        "value": 1304504,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:12:00.000Z",
+        "value": 1304530,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:13:00.000Z",
+        "value": 1304555,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:14:00.000Z",
+        "value": 1304580,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:15:00.000Z",
+        "value": 1304605,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:16:00.000Z",
+        "value": 1304631,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:17:00.000Z",
+        "value": 1304656,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:18:00.000Z",
+        "value": 1304681,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:19:00.000Z",
+        "value": 1304706,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:20:00.000Z",
+        "value": 1304732,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:21:00.000Z",
+        "value": 1304757,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:22:00.000Z",
+        "value": 1304782,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:23:00.000Z",
+        "value": 1304808,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:24:00.000Z",
+        "value": 1304833,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:25:00.000Z",
+        "value": 1304858,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:26:00.000Z",
+        "value": 1304884,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:27:00.000Z",
+        "value": 1304909,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:28:00.000Z",
+        "value": 1304934,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:29:00.000Z",
+        "value": 1304960,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:30:00.000Z",
+        "value": 1304985,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:31:00.000Z",
+        "value": 1305010,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:32:00.000Z",
+        "value": 1305036,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:33:00.000Z",
+        "value": 1305061,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:34:00.000Z",
+        "value": 1305086,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:35:00.000Z",
+        "value": 1305111,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:36:00.000Z",
+        "value": 1305137,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:37:00.000Z",
+        "value": 1305162,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:38:00.000Z",
+        "value": 1305187,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:39:00.000Z",
+        "value": 1305213,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:40:00.000Z",
+        "value": 1305238,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:41:00.000Z",
+        "value": 1305263,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:42:00.000Z",
+        "value": 1305288,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:43:00.000Z",
+        "value": 1305314,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:44:00.000Z",
+        "value": 1305339,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:45:00.000Z",
+        "value": 1305364,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:46:00.000Z",
+        "value": 1305390,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:47:00.000Z",
+        "value": 1305415,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:48:00.000Z",
+        "value": 1305440,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:49:00.000Z",
+        "value": 1305465,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:50:00.000Z",
+        "value": 1305491,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:51:00.000Z",
+        "value": 1305516,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:52:00.000Z",
+        "value": 1305541,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:53:00.000Z",
+        "value": 1305567,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:54:00.000Z",
+        "value": 1305592,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:55:00.000Z",
+        "value": 1305617,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:56:00.000Z",
+        "value": 1305642,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:57:00.000Z",
+        "value": 1305668,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:58:00.000Z",
+        "value": 1305693,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T06:59:00.000Z",
+        "value": 1305718,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:00:00.000Z",
+        "value": 1305743,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:01:00.000Z",
+        "value": 1305769,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:02:00.000Z",
+        "value": 1305794,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:03:00.000Z",
+        "value": 1305819,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:04:00.000Z",
+        "value": 1305844,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:05:00.000Z",
+        "value": 1305869,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:06:00.000Z",
+        "value": 1305895,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:07:00.000Z",
+        "value": 1305920,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:08:00.000Z",
+        "value": 1305945,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:09:00.000Z",
+        "value": 1305970,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:10:00.000Z",
+        "value": 1305995,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:11:00.000Z",
+        "value": 1306021,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:12:00.000Z",
+        "value": 1306046,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:13:00.000Z",
+        "value": 1306071,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:14:00.000Z",
+        "value": 1306096,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:15:00.000Z",
+        "value": 1306121,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:16:00.000Z",
+        "value": 1306147,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:17:00.000Z",
+        "value": 1306172,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:18:00.000Z",
+        "value": 1306197,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:19:00.000Z",
+        "value": 1306222,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:20:00.000Z",
+        "value": 1306247,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:21:00.000Z",
+        "value": 1306273,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:22:00.000Z",
+        "value": 1306298,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:23:00.000Z",
+        "value": 1306323,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:24:00.000Z",
+        "value": 1306348,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:25:00.000Z",
+        "value": 1306373,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:26:00.000Z",
+        "value": 1306399,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:27:00.000Z",
+        "value": 1306424,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:28:00.000Z",
+        "value": 1306449,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:29:00.000Z",
+        "value": 1306474,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:30:00.000Z",
+        "value": 1306500,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:31:00.000Z",
+        "value": 1306525,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:32:00.000Z",
+        "value": 1306550,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:33:00.000Z",
+        "value": 1306575,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:34:00.000Z",
+        "value": 1306601,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:35:00.000Z",
+        "value": 1306626,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:36:00.000Z",
+        "value": 1306651,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:37:00.000Z",
+        "value": 1306676,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:38:00.000Z",
+        "value": 1306702,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:39:00.000Z",
+        "value": 1306727,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:40:00.000Z",
+        "value": 1306752,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:41:00.000Z",
+        "value": 1306777,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:42:00.000Z",
+        "value": 1306803,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:43:00.000Z",
+        "value": 1306828,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:44:00.000Z",
+        "value": 1306853,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:45:00.000Z",
+        "value": 1306878,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:46:00.000Z",
+        "value": 1306903,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:47:00.000Z",
+        "value": 1306929,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:48:00.000Z",
+        "value": 1306954,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:49:00.000Z",
+        "value": 1306979,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:50:00.000Z",
+        "value": 1307004,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:51:00.000Z",
+        "value": 1307029,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:52:00.000Z",
+        "value": 1307054,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:53:00.000Z",
+        "value": 1307080,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:54:00.000Z",
+        "value": 1307105,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:55:00.000Z",
+        "value": 1307130,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:56:00.000Z",
+        "value": 1307155,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:57:00.000Z",
+        "value": 1307181,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:58:00.000Z",
+        "value": 1307206,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T07:59:00.000Z",
+        "value": 1307231,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:00:00.000Z",
+        "value": 1307256,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:01:00.000Z",
+        "value": 1307281,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:02:00.000Z",
+        "value": 1307307,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:03:00.000Z",
+        "value": 1307332,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:04:00.000Z",
+        "value": 1307357,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:05:00.000Z",
+        "value": 1307382,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:06:00.000Z",
+        "value": 1307407,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:07:00.000Z",
+        "value": 1307432,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:08:00.000Z",
+        "value": 1307458,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:09:00.000Z",
+        "value": 1307483,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:10:00.000Z",
+        "value": 1307508,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:11:00.000Z",
+        "value": 1307533,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:12:00.000Z",
+        "value": 1307558,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:13:00.000Z",
+        "value": 1307583,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:14:00.000Z",
+        "value": 1307608,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:15:00.000Z",
+        "value": 1307633,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:16:00.000Z",
+        "value": 1307658,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:17:00.000Z",
+        "value": 1307683,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:18:00.000Z",
+        "value": 1307708,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:19:00.000Z",
+        "value": 1307734,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:20:00.000Z",
+        "value": 1307759,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:21:00.000Z",
+        "value": 1307784,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:22:00.000Z",
+        "value": 1307809,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:23:00.000Z",
+        "value": 1307834,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:24:00.000Z",
+        "value": 1307859,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:25:00.000Z",
+        "value": 1307884,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:26:00.000Z",
+        "value": 1307910,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:27:00.000Z",
+        "value": 1307935,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:28:00.000Z",
+        "value": 1307960,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:29:00.000Z",
+        "value": 1307985,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:30:00.000Z",
+        "value": 1308010,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:31:00.000Z",
+        "value": 1308035,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:32:00.000Z",
+        "value": 1308060,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:33:00.000Z",
+        "value": 1308085,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:34:00.000Z",
+        "value": 1308111,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:35:00.000Z",
+        "value": 1308136,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:36:00.000Z",
+        "value": 1308161,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:37:00.000Z",
+        "value": 1308186,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:38:00.000Z",
+        "value": 1308211,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:39:00.000Z",
+        "value": 1308236,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:40:00.000Z",
+        "value": 1308262,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:41:00.000Z",
+        "value": 1308287,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:42:00.000Z",
+        "value": 1308312,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:43:00.000Z",
+        "value": 1308337,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:44:00.000Z",
+        "value": 1308362,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:45:00.000Z",
+        "value": 1308388,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:46:00.000Z",
+        "value": 1308413,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:47:00.000Z",
+        "value": 1308438,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:48:00.000Z",
+        "value": 1308463,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:49:00.000Z",
+        "value": 1308488,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:50:00.000Z",
+        "value": 1308513,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:51:00.000Z",
+        "value": 1308538,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:52:00.000Z",
+        "value": 1308563,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:53:00.000Z",
+        "value": 1308588,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:54:00.000Z",
+        "value": 1308613,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:55:00.000Z",
+        "value": 1308638,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:56:00.000Z",
+        "value": 1308663,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:57:00.000Z",
+        "value": 1308688,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:58:00.000Z",
+        "value": 1308713,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T08:59:00.000Z",
+        "value": 1308738,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T09:00:00.000Z",
+        "value": 1308763,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T09:01:00.000Z",
+        "value": 1308779,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T09:02:00.000Z",
+        "value": 1308781,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:23:00.000Z",
+        "value": 1308808,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:24:00.000Z",
+        "value": 1308838,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:25:00.000Z",
+        "value": 1308865,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:26:00.000Z",
+        "value": 1308892,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:27:00.000Z",
+        "value": 1308919,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:28:00.000Z",
+        "value": 1308945,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:29:00.000Z",
+        "value": 1308971,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:30:00.000Z",
+        "value": 1308996,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:31:00.000Z",
+        "value": 1309021,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:32:00.000Z",
+        "value": 1309046,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:33:00.000Z",
+        "value": 1309071,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:34:00.000Z",
+        "value": 1309096,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:35:00.000Z",
+        "value": 1309111,
+        "interpolated": false
+      },
+      {
+        "tickTimestamp": "2026-06-29T15:36:00.000Z",
+        "value": 1309112,
+        "interpolated": false
+      }
+    ],
+    "typeIsCumulativeData": true,
+    "typeIsMoistureSensor": false,
+    "typeIsTemperatureSensor": false,
+    "typeIsDoorSensor": false,
+    "typeIsTOR": false,
+    "isBusConnectedSensor": false,
+    "isMultiSensor": false,
+    "typeIsMultiLevelSensor": false,
+    "getPicto": "/images/pictos/drop_reverse.svg",
+    "getName": "Débitmètre",
+    "getEquipmentName": "Débitmètre"
+  }
+]

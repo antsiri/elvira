@@ -13,9 +13,10 @@ import re
 import time
 import requests
 
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Any
 from dotenv import load_dotenv
+from tqdm import tqdm
 
 DEFAULT_BASE_URL = 'https://mysolem.com'
 
@@ -221,3 +222,35 @@ class SolemClient:
                                                                                  'forcedRawOrComputed': 'computed',
                                                                                  })
 
+    @staticmethod
+    def extract_ticks(response: Any, input_id: str | None = None) -> list[dict[str, Any]]:
+        elements = response if isinstance(response, list) else []
+        if input_id is not None:
+            elements = [e for e in elements if e .get('id') == input_id]
+        if len(elements) != 1:
+            raise SolemError(f'1 expected input in answare, found {len(elements)} (input_id={input_id})')
+        el = elements[0]
+        expr = el.get('expression')
+        out = []
+        for t in el.get('computedSensorData') or []:
+            v = apply_expression(expr, t['value'])
+            if v is not None:
+                out.append({'tickTimestamp': t['tickTimestamp'], 'value': v})
+        return out
+
+    def get_flow_ticks(self, module_id: str, input_id: str, start: datetime, end: datetime, chunk_days: int = 7) -> list[dict[str, Any]]:
+        if start >= end:
+            raise ValueError('start >= end')
+        if chunk_days < 1:
+            raise ValueError('chunk_days >= 1')
+        step = timedelta(days=chunk_days)
+        bounds = []
+        cursor = start
+        while cursor < end:
+            bounds.append((cursor, min(cursor + step, end)))
+            cursor += step
+        merged: dict[str, dict[str, Any]] = {}
+        for a, b in tqdm(bounds, desc='MySOLEM counter', unit='block'):
+            for tick in self.extract_ticks*(self.get_sensor_data(module_id, a, b), input_id):
+                merged[tick['tickTimestamp']] = tick
+            return [merged[k] for k in sorted(merged)]
